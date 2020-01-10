@@ -1,0 +1,33 @@
+
+Showing logs for build [32mvinseyn-environment-seerrazor-s-ccrgs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-jbm6b[0m
+{"level":"warn","ts":1578650349.3632574,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1578650349.364314,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mvinseyn-environment-seerrazor-s-ccrgs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-xkk6h[0m
+{"level":"warn","ts":1578650349.8482654,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1578650349.854775,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mvinseyn-environment-seerrazor-s-ccrgs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mvinseyn-environment-seerrazor-s-ccrgs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-vinseyn-environment-seerrazor-s-8cwtl[0m
+{"level":"warn","ts":1578650353.0172682,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1578650354.0429482,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/environment-seerrazor-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mvinseyn-environment-seerrazor-s-ccrgs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d76102a86c03f6b59da81c87f82e6189c4aceefe,2:5405a0a27081d3e96407c69d2d09d93ce6d51f87
+DEBUG: ran git fetch --unshallow origin 5405a0a27081d3e96407c69d2d09d93ce6d51f87: d76102a86c03f6b59da81c87f82e6189c4aceefe: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d76102a86c03f6b59da81c87f82e6189c4aceefe in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 5405a0a27081d3e96407c69d2d09d93ce6d51f87 in 
+Merged SHA 5405a0a27081d3e96407c69d2d09d93ce6d51f87 with commit message 'chore: Promote first-test to version 0.0.2' into base branch master
+
+Showing logs for build [32mvinseyn-environment-seerrazor-s-ccrgs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
